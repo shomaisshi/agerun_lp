@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #83769c;
+    line-height: 1.8;
+}
+
+.Hero__img {
+    width: 100%;
+}
+
+/* Main  */
+.Main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.Title__flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Title__icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+}
+
+.Title__h1 {
+    font-size: 24px;
+}
+
+/* LinkBtn */
+.LinkBtn {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.LinkBtn__a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff0040;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+.LinkBtn__a::after {
+    content: '';
+    display: inline-block;
+    background: url(../img/arrow-up-right-from-square-solid.svg);
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    vertical-align: -2px;
+}
+
+.LinkBtn__a:hover {
+    background: #be1250;
+}
+
+/* AgeageAwards */
+.AgeageAwards {
+    text-align: center;
+}
+
+.AgeageAwards img {
+    height: 60px;
+}
+
+/* ImageContainer */
+.ImageContainer {
+    margin-top: 40px;
+    max-width: 400px;
+}
+
+.ImageContainer img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.Footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+    .Main {
+        padding: 32px;
+    }
+
+    .Title__flex {
+        gap: 32px;
+    }
+
+    .Title__icon {
+        width: 160px;
+        height: 160px;
+        border-radius: 32px;
+    }
+
+    .Title__h1 {
+        font-size: 32px;
+    }
+
+    .Title__p {
+        font-size: 20px;
+    }
+
+    .LinkBtn__a {
+        padding: 20px 40px;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+
+    .LinkBtn__a::after {
+        width: 20px;
+        height: 20px;
+        margin-left: 18px;
+    }
+
+    .AgeageAwards img {
+        height: 80px;
+    }
+
+}
